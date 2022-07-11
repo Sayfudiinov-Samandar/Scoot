@@ -192,6 +192,7 @@ only screen and (min-resolution: 2dppx) {
   margin-bottom: 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   /* justify-content: space-between; */
 }
@@ -202,12 +203,12 @@ only screen and (min-resolution: 2dppx) {
 
 .about-box__title-text {
   width: 445px;
-  margin-right: 190px;
+  /* margin-right: 190px; */
 }
 
 .about-box:nth-child(2) .about-box__title-text {
   margin-right: 0;
-  margin-left: 190px;
+  /* margin-left: 190px; */
 }
 
 .about-box__title {
@@ -232,10 +233,19 @@ only screen and (min-resolution: 2dppx) {
 .about-box__img-box {
   position: relative;
 }
-
+.about-box__img{
+  position: relative;
+  top: 0%;
+  right: -38%;
+}
+.about-box:nth-child(2) > .about-box__img-box > .about-box__img{
+  position: relative;
+  top: 0%;
+  left: -35%;
+}
 .about-box::after {
   position: absolute;
-  right: -70%;
+  right: -59%;
   top: 0%;
   width: 1078.79px;
   height: 445px;
@@ -251,9 +261,10 @@ only screen and (min-resolution: 2dppx) {
 
 .about-box:nth-child(2):before {
   display: block;
+  z-index: 5;
   position: absolute;
   top: -1%;
-  left: -74%;
+  left: -65%;
   background-image: url("../images/city-path.png");
   width: 1078.79px;
   height: 445px;
