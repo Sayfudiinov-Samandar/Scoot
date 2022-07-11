@@ -145,7 +145,98 @@ body{
 }
 
 /* Start About page Samandar */
+.about-hero{
+  overflow-x: hidden;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .about-top-box{
+    background-image: url("../images/about-hero-bg@2x.png");
+  }  
+}
 
 .about-top-box{
-  background-image: url("../images/");
+  position: relative;
+  height: 200px;
+  background-image: url("../images/about-hero-bg.png");
+}
+.about-top-box__title{
+  position: absolute;
+  top: 0%;
+  font-family: 'Space Mono';
+  left: calc(50% - 557px);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;  
+  color: #FFFFFF;
+}
+
+.about-box{
+  position: relative;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+
+  /* justify-content: space-between; */
+}
+
+.about-box__title-text{
+  width: 445px;
+  margin-right: 190px;
+}
+.about-box:nth-child(2) .about-box__title-text{
+  margin-right: 0;
+  margin-left: 190px;
+}
+.about-box__title{
+  margin-bottom: 24px;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567; 
+}
+.about-box__text{
+  margin-top: 0;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dim-grey);
+}
+.about-box__img-box{
+  position: relative;
+}
+.about-box::after{
+  position: absolute;
+  right: -70%;
+  top: 20%;
+  width: 1078.79px;
+  height: 445px;
+  background-image: url("../images/mobility-yellow-line.svg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+.about-box:nth-child(2):after{
+  display: none;
+}
+.about-box:nth-child(2):before{
+  display: block;
+  position: absolute;
+  top: 19%;
+  left: -74%;
+  background-image: url("../images/city-path.png");
+  width: 1078.79px;
+  height: 445px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
 }
