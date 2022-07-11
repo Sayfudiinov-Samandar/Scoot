@@ -1,4 +1,4 @@
-/* VARIABLES */
+
 
 :root {
   --yellow-color: #FCB72B;
@@ -10,7 +10,6 @@
 }
 
 
-/* space-mono-700 - latin */
 @font-face {
   font-family: 'Space Mono';
   font-style: normal;
@@ -68,7 +67,6 @@ body {
   overflow: hidden;
 }
 
-/* CONTAINER */
 
 .container {
   max-width: 1150px;
@@ -78,8 +76,12 @@ body {
   padding-left: 20px;
 }
 
+
 /* STICKY-FOOTER */
 .site-main {
+
+.site-main{
+
   flex-grow: 1;
 }
 
