@@ -244,8 +244,8 @@ only screen and (                min-resolution: 2dppx) {
   background-size: contain;
   background-repeat: no-repeat;
   content: "";
-=======
-.hero {
+}
+.hero{
   padding: 153px 0;
   background-image: url("../images/hero-back.jpg");
   background-repeat: no-repeat;
@@ -255,7 +255,6 @@ only screen and (                min-resolution: 2dppx) {
 
 .hero__wrapper {
   position: relative;
-  /* overflow-x: hidden; */
 
 }
 
