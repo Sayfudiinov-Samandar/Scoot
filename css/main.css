@@ -275,7 +275,6 @@ only screen and (                min-resolution: 2dppx) {
 
 .hero__wrapper {
   position: relative;
-  /* overflow-x: hidden; */
 
 }
 
