@@ -165,6 +165,11 @@ only screen and (                min-resolution: 2dppx) {
   }  
 }
 
+.about-all-box{
+  margin: 0;
+  padding: 100px 0 0 0;
+
+}
 .about-top-box{
   position: relative;
   height: 200px;
@@ -184,11 +189,14 @@ only screen and (                min-resolution: 2dppx) {
 
 .about-box{
   position: relative;
-  padding-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
 
   /* justify-content: space-between; */
+}
+.about-box:nth-child(2){
+  margin-bottom: 0;
 }
 
 .about-box__title-text{
@@ -222,7 +230,7 @@ only screen and (                min-resolution: 2dppx) {
 .about-box::after{
   position: absolute;
   right: -70%;
-  top: 20%;
+  top: 0%;
   width: 1078.79px;
   height: 445px;
   background-image: url("../images/mobility-yellow-line.svg.svg");
@@ -236,7 +244,7 @@ only screen and (                min-resolution: 2dppx) {
 .about-box:nth-child(2):before{
   display: block;
   position: absolute;
-  top: 19%;
+  top: -1%;
   left: -74%;
   background-image: url("../images/city-path.png");
   width: 1078.79px;
@@ -245,7 +253,19 @@ only screen and (                min-resolution: 2dppx) {
   background-repeat: no-repeat;
   content: "";
 }
-.hero{
+.our-box__title{
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+/* End About section */
+.hero {
   padding: 153px 0;
   background-image: url("../images/hero-back.jpg");
   background-repeat: no-repeat;
