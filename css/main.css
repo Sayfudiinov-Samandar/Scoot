@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-    url('../fonts/space-mono-v11-latin-700.woff2') format('woff2'),
-    url('../fonts/space-mono-v11-latin-700.woff') format('woff');
+  url('../fonts/space-mono-v11-latin-700.woff2') format('woff2'),
+  url('../fonts/space-mono-v11-latin-700.woff') format('woff');
 }
 
 /* lexend-deca-regular - latin */
@@ -23,8 +23,8 @@
   font-style: normal;
   font-weight: 400;
   src:
-    url('../fonts/lexend-deca-v16-latin-regular.woff2') format('woff2'),
-    url('../fonts/lexend-deca-v16-latin-regular.woff') format('woff');
+  url('../fonts/lexend-deca-v16-latin-regular.woff2') format('woff2'),
+  url('../fonts/lexend-deca-v16-latin-regular.woff') format('woff');
 }
 
 /* GENERAL */
@@ -65,6 +65,9 @@ body {
   overflow: hidden;
 }
 
+a{
+  text-decoration: none;
+}
 
 .container {
   max-width: 1150px;
@@ -79,7 +82,7 @@ body {
 
 
 .site-main {
-
+  
   flex-grow: 1;
 }
 
@@ -99,6 +102,7 @@ body {
 }
 
 .logo {
+  display: block;
   margin-right: 58px;
 }
 
@@ -165,7 +169,12 @@ only screen and (min-resolution: 2dppx) {
 
 .about-all-box {
   margin: 0;
+
   padding: 100px 0 100px 0;
+
+
+  padding: 100px 0 0 0;
+  
 
 }
 
@@ -192,7 +201,11 @@ only screen and (min-resolution: 2dppx) {
   margin-bottom: 100px;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
+
+=======
+  
 
   /* justify-content: space-between; */
 }
@@ -452,7 +465,7 @@ only screen and (min-resolution: 2dppx) {
 
 .hero__wrapper {
   position: relative;
-
+  
 }
 
 .hero__wrapper::after {
@@ -599,7 +612,7 @@ only screen and (min-resolution: 2dppx) {
   color: var(--light-grey);
 }
 
-.stages{
+.stages {
   padding-top: 40px;
   padding-bottom: 200px;
   overflow-x: hidden;
@@ -630,21 +643,22 @@ only screen and (min-resolution: 2dppx) {
 
 
 
-.stages__item:nth-child(2)::after{
+.stages__item:nth-child(2)::after {
   right: 55%;
   background-image: url("../images/city-path.png");
 }
 
-.stages__item:nth-child(2){
+.stages__item:nth-child(2) {
   margin-top: 160px;
   margin-bottom: 160px;
 }
-.stages__item:nth-child(2) .stages__box{
+
+.stages__item:nth-child(2) .stages__box {
   margin-right: 0;
   margin-left: 220px;
 }
 
-.stages__item:last-child::after{
+.stages__item:last-child::after {
   top: -1%;
   right: -60%;
   background-image: url("../images/payment-path.png");
@@ -674,4 +688,129 @@ only screen and (min-resolution: 2dppx) {
   font-size: 15px;
   line-height: 25px;
   color: var(--dim-grey);
+}
+
+.footer__all {
+  padding: 102px 0;
+  background-color: var(--dark-navy);
+  background-image: url("../images/footer-img.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 490px) calc(50% + 220px);
+}
+
+.footer__box-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  width: 455px;
+}
+
+.footer__title {
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+}
+
+.footer__left{
+  display: flex;
+}
+
+.footer__market {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #E5ECF4;
+}
+
+.footer__market:first-child{
+  margin-right: 18px;
+}
+
+.footer__brand {
+  margin-right: 12px;
+}
+
+.footer__icon-text {
+  display: block;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.446429px;
+  color: var(--dark-navy);
+}
+
+.footer__icon-title{
+  display: block;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: var(--dark-navy);
+}
+
+.footer__bottom{
+  padding: 35px 0;
+  background-color: #333A44;
+}
+
+.footer__left-items{
+  display: flex;
+
+  align-items: center;
+  
+}
+
+.footer__list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: -32px;
+}
+
+.footer__item{
+  margin-left: 32px;
+}
+
+.footer__link{
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  color: var(--dim-grey);
+}
+
+
+.social{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.social__item{
+  margin-left: 24px;
+}
+
+.social__link{
+  color: var(--yellow-color);
+  transition: color 0.3s ease;
+}
+
+.social__link:hover{
+  color: #fff;
 }
