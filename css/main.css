@@ -167,7 +167,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .about-all-box{
   margin: 0;
-  padding: 100px 0 0 0;
+  padding: 100px 0 100px 0;
 
 }
 .about-top-box{
@@ -253,7 +253,20 @@ only screen and (                min-resolution: 2dppx) {
   background-repeat: no-repeat;
   content: "";
 }
+.our-section{
+  padding-bottom: 120px;
+}
+.our-box__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+}
 .our-box__title{
+  margin: 0;
+  margin-bottom: 85px;
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 700;
@@ -261,8 +274,150 @@ only screen and (                min-resolution: 2dppx) {
   line-height: 48px;
   text-align: center;
   letter-spacing: -2.14286px;
-  color: #495567;
+  color: var(--dark-navy);
 }
+.our-box__list-item{
+  position: relative;
+  list-style: none;
+  width: 350px;
+}
+.our-box__img{
+  margin: 0 auto;
+  margin-bottom: 97px;
+}
+
+.our-box__img-bottom{
+  margin: 0;
+  padding: 34px;
+  display: inline-block;
+
+  position: absolute;
+  top: 41%;
+  left: 37%;
+
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: var(--yellow-color);
+
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;  
+}
+
+.our-box__list-title{
+  margin-bottom: 27px;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 24px;  
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: var(--dark-navy);
+}
+.our-box__list-text{
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+.faqS-section{
+  padding-bottom: 160px;
+}
+.faqs-det-title{
+  margin: 0;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.78571px;
+  color: #495567; 
+}
+.faqS-box__title{
+  margin-bottom: 64px;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567; 
+}
+.faqS-box__detils{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.faqs-det__box{
+  padding: 32px 40px;
+  width: 730px;
+  background-color: var(--snow-color);
+}
+.faqs-det__box:hover{
+  background-color: #FFF4DF;
+}
+.faqs-det__box:not(:last-child){
+  margin-bottom: 16px;
+}
+.faqs-det__box:last-child{
+  margin-bottom: 64px;
+}
+.faqs-det__summ{
+  position: relative;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--dark-navy);
+  list-style: none;
+}
+
+.faqs-det__summ::after{
+  position: absolute;
+  top: 28%;
+  right: 0%;
+  background-image: url("../images/symbol-summery.svg");
+  width: 25px;
+  height:15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  transition: transform 0.3s ease;
+}
+.faqs-det__box[open] .faqs-det__summ::after{
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.faqs-det__text{
+  margin-top: 24px;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dark-navy);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* End About section */
 .hero {
