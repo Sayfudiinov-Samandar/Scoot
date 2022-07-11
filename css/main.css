@@ -1,14 +1,40 @@
 /* VARIABLES */
 
 :root{
-  /* --main-text-color : #fff; */
-  /* --main-bg-color : #fff; */
-  /* --main-font-size : 16px; */
-  /* --main-font-weight : 400; */
-  /* --main-line-height : 1.5; */
+  --yellow-color:#FCB72B;
+  --dark-navy:#495567;
+  --dim-grey:#939CAA;
+  --light-grey:#939CAA;
+  --snow-color:#F2F5F9;
+  --light-yellow:#FFF4DF;
+}
+
+
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/space-mono-v11-latin-700.woff2') format('woff2'), 
+       url('../fonts/space-mono-v11-latin-700.woff') format('woff'); 
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+       url('../fonts/lexend-deca-v16-latin-regular.woff2') format('woff2'),
+       url('../fonts/lexend-deca-v16-latin-regular.woff') format('woff'); 
 }
 
 /* GENERAL */
+
+*{
+  box-sizing: border-box;
+}
 
 html{
   height: 100%;
