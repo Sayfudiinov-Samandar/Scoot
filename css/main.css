@@ -825,13 +825,14 @@ only screen and (min-resolution: 2dppx) {
 /* Location section */
 
 .hero--active{
+  padding: 0;
   position: relative;
   background-image: url("../images/carrier.png");
 }
 .hero--active::after{
   position: absolute;
-  top: 46%;
-  right: calc(50% - 930px);
+  top: 31%;
+  right: calc(50% - 905px);
   width: 234px;
   height: 62px;
   content: "";
