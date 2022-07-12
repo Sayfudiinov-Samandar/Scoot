@@ -125,6 +125,15 @@ a{
   line-height: 25px;
   color: var(--light-grey);
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.site-header__link:hover{
+  color: var(--yellow-color);
+}
+
+.footer__link:hover{
+  color: var(--yellow-color);
 }
 
 .site-btns {
@@ -837,7 +846,7 @@ only screen and (min-resolution: 2dppx) {
   height: 62px;
   content: "";
   background-image: url(../images/hero-circle.svg);
-
+  
 }
 .hero__title{
   font-family: 'Space Mono';
@@ -847,6 +856,54 @@ only screen and (min-resolution: 2dppx) {
   letter-spacing: -2.5px;
   color: #FFFFFF;
 }
+
+.jobs{
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.jobs__list{
+  margin: 0;
+  padding-left: 0;
+}
+
+.jobs__item{
+  width: 1110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 32px 64px 35px 40px;
+  background-color: var(--snow-color);
+}
+
+.jobs__title{
+  margin-bottom: 8px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--dark-navy);
+}
+
+.jobs__text{
+  margin: 0;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dark-navy);
+}
+
+.apply{
+  padding: 14px 67px;
+}
+
+
+
 
 
 
