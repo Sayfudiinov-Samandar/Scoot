@@ -1026,3 +1026,7 @@ only screen and (min-resolution: 2dppx) {
 .location{
   padding: 120px 0;
 }
+
+summary{
+  cursor: pointer;
+}
