@@ -462,6 +462,9 @@ only screen and (min-resolution: 2dppx) {
   background-size: cover;
   overflow-x: hidden;
 }
+.hero--active{
+  background-image: url("../images/");
+}
 
 .hero__wrapper {
   position: relative;
