@@ -876,3 +876,7 @@ only screen and (min-resolution: 2dppx) {
   line-height: 25px;
   color: #939CAA;
 }
+
+.location{
+  padding: 120px 0;
+}
