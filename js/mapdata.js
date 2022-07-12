@@ -108,7 +108,7 @@ var simplemaps_worldmap_mapdata={
     },
     BI: {
       name: "Burundi",
-      description: " "
+      description: " ",
     },
     BE: {
       name: "Belgium",
@@ -928,11 +928,41 @@ var simplemaps_worldmap_mapdata={
     }
   },
   locations: {
-    paris: {
-      name: "Paris",
-      lat: "48.866666670",
-      lng: "2.333333333"
+    
+    "0": {
+      lat: 45.71,
+      lng: -84.0059731,
+      name: "New York",
+      type: "image",
+      image_url: "./images/new-york.svg",
+      size: "50",
+
+    },
+    "1": {
+      name: "London",
+      lat: 55.5073346,
+      lng: -0.1276831,
+      type: "image",
+      image_url: "./images/london.svg",
+      size: "50"
+    },
+    "2": {
+      name: "Jakarta",
+      lat: 6.200000,
+      lng: 100.816666,
+      type: "image",
+      image_url: "./images/jakarta.svg",
+      size: "50"
+    },
+    "3": {
+      name: "Yokohoma",
+      lat: 45.443707,
+      lng: 145.638031,
+      type: "image",
+      image_url: "./images/yokohoma.svg",
+      size: "50"
     }
+    // end
   },
   labels: {},
   legend: {
