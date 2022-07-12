@@ -169,13 +169,13 @@ only screen and (min-resolution: 2dppx) {
 
 .about-all-box {
   margin: 0;
-
+  
   padding: 100px 0 100px 0;
-
-
+  
+  
   padding: 100px 0 0 0;
   
-
+  
 }
 
 .about-top-box {
@@ -201,12 +201,12 @@ only screen and (min-resolution: 2dppx) {
   margin-bottom: 100px;
   display: flex;
   align-items: center;
-
-  justify-content: space-between;
-
-=======
   
-
+  justify-content: space-between;
+  
+  =======
+  
+  
   /* justify-content: space-between; */
 }
 
@@ -295,7 +295,7 @@ only screen and (min-resolution: 2dppx) {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-
+  
 }
 .our-box__title{
   margin: 0;
@@ -325,16 +325,16 @@ only screen and (min-resolution: 2dppx) {
   margin: 0;
   padding: 34px;
   display: inline-block;
-
+  
   position: absolute;
   top: 41%;
   left: 37%;
-
+  
   width: 96px;
   height: 96px;
   border-radius: 50%;
   background-color: var(--yellow-color);
-
+  
   font-family: 'Space Mono';
   font-weight: 700;
   font-size: 24px;
@@ -766,7 +766,7 @@ only screen and (min-resolution: 2dppx) {
 
 .footer__left-items{
   display: flex;
-
+  
   align-items: center;
   
 }
@@ -818,4 +818,45 @@ only screen and (min-resolution: 2dppx) {
 
 .carrier{
   background-image: url("../images/carrier.png");
+}
+
+.jobs{
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.jobs__list{
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: -24px;
+}
+
+.jobs__item{
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 32px 64px 35px 40px;
+  background-color: var(--snow-color);
+}
+
+.jobs__title{
+  margin-bottom: 8px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: var(--dark-navy);
+}
+
+.jobs__text{
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dark-navy);
 }
