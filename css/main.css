@@ -814,3 +814,8 @@ only screen and (min-resolution: 2dppx) {
 .social__link:hover{
   color: #fff;
 }
+
+
+.carrier{
+  background-image: url("../images/carrier.png");
+}
